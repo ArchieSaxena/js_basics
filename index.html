@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title>Starbucks</title>
+</head>
+<body>
+<script>
+let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let coffee=["Latte","Cappuccino","Frappucino"];
+let sizes=["Tall","Grande","Venti"];
+let a=[];
+let b=[];
+let list="";
+alert("Welcome to Starbucks! I'm your starbucks assistant and I will help you create your weeklystarbucks coffee schedule");
+alert("To start we need to know what your coffee preferences are for each day of the week. Let'sstart with");
+for(let i=0;i<7;i++){
+let m=prompt(days[i]+": Would you prefer a Latte, a Cappuccino, or a Frappucino?\nPleasetype 1 for a Latte, 2 for a Cappuccino, or 3 for a Frappucino");
+a[i]=m;
+let n=prompt("What size coffee would you like?\nPlease select 1 for a Tall, 2 for a Grande, or 3for Venti");
+b[i]=n;
+}
+for(let i=0;i<7;i++){
+list=list+days[i]+": "+ coffee[(a[i]-1)] + " " + sizes[(b[i]-1)] + "\n";
+}
+alert("The following coffee selections will be delivered to your home or office.Thank you forchoosing Starbucks!\n"+list);
+</script>
+</body>
+</html>
